@@ -22,3 +22,4 @@ while true; do
 done
 '
 /etc/xdg/openbox/autostart
+sudo reboot
