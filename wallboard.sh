@@ -15,7 +15,7 @@ sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromi
 sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
 /usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk http://www.quotationspage.com/random.php &
 while true; do
-   xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab;
+   xdotool keydown ctrl+F5; xdotool keyup ctrl+F5;
    sleep 10
 done
 ' >> /etc/xdg/openbox/autostart
